@@ -1,6 +1,6 @@
 FROM php:7.1-fpm
 
-MAINTAINER Montol Saklor <montol saklord@gmail.com>
+MAINTAINER Montol Saklor <montol saklor@gmail.com>
 
 ENV TZ=Asia/Bangkok
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
