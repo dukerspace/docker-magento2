@@ -2,8 +2,5 @@
 - copy .env-dist > .env
 - set up environtment 
 - docker-compose up -d
-
-### Set up magento2
-- chmod -R 775 var/
-- chmod -R 775 generated/
-- set up && enjoy the code.
+- set up magento 2
+- enjoy the code.
