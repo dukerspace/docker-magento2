@@ -1,3 +1,4 @@
+### Magento version 2.2.4
 ### Set up docker
 - copy .env-dist > .env
 - set up environtment 
