@@ -9,6 +9,7 @@ services:
             - 9000:9000
         restart: always
         volumes:
+            - ./permission.sh:/var/www/permission.sh
             - ./app/:/var/www
             - ./log/www/:/var/www/log
     nginx:
