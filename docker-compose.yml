@@ -8,9 +8,13 @@ services:
             - db
         restart: always
         volumes:
+            - ./clean.sh:/var/www/clean.sh
             - ./permission.sh:/var/www/permission.sh
+            - ./static-deploy.sh:/var/www/static-deploy.sh
+            - ./di-compile.sh:/var/www/di-compile.sh
+            - ./deploy.sh:/var/www/deploy.sh
+            - ./php7-fpm/php.ini:/usr/local/etc/php/php.ini
             - ./app:/var/www
-            - ./log/www/:/var/www/log
     nginx:
         image: nginx:1.13
         depends_on:
